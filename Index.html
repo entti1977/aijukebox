@@ -36,6 +36,12 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe
 </style>
 </head>
 <body>
+  <script>
+  var password = prompt("Please enter the password:");
+  if (password !== "canal123") {
+    document.body.innerHTML = "<h1>Access denied</h1>";
+  }
+</script>
 <div class="jukebox" role="application" aria-label="CRT Jukebox">
   <div class="gate" id="gate"><button class="btn" id="startAudio">Tap to start audio</button></div>
   <div class="header">Now Playing</div>
